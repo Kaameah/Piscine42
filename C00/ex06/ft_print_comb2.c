@@ -1,65 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccorbeau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/05 19:49:33 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/05 20:16:58 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/05 10:33:05 by ccorbeau          #+#    #+#             */
+/*   Updated: 2026/03/05 13:36:11 by ccorbeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_sort_int_tab(int *tab, int size)
+void	ft_print_comb2(void)
 {
-	int	tmp;
-	int	i;
+	int		a;
+	int		b;
+	char	ch[2];
 
-	i = 0;
-	while (i < size - 1)
+	a = 0;
+	while (a <= 98)
 	{
-		if (tab[i] > tab[i + 1])
+		b = a + 1;
+		while (b <= 99)
 		{
-			tmp = tab[i];
-			tab[i] = tab[i + 1];
-			tab[i + 1] = tmp;
-			i = 0;
+			ch[0] = a / 10 + '0';
+			ch[1] = a % 10 + '0';
+			write (1, ch, 2);
+			write (1, " ", 1);
+			ch[0] = b / 10 + '0';
+			ch[1] = b % 10 + '0';
+			write (1, ch, 2);
+			if (a != 98 || b != 99)
+				write (1, ", ", 2);
+			b++;
 		}
-		else
-		{
-			i++;
-		}
+		a++;
 	}
 }
-
 /*
-void	ft_putnbr(int nb)
-{
-	if (nb > 9)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-	}
-	else
-	{
-		nb += '0';
-		write(1, &nb, 1);
-	}
-}
-
 int	main(void)
 {
-	int	tab[8] = {3,0,0,2,9,0,4,2};
-	
-	ft_sort_int_tab(tab, 8);
-
-	int	i = 0;
-	while (i < 8)
-	{
-		ft_putnbr(tab[i]);
-		i++;
-	}
+	ft_print_comb2();
 }
 */

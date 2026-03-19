@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_recursive_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ccorbeau <ccorbeau@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/07 17:37:39 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/07 17:37:41 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/11 14:15:14 by ccorbeau          #+#    #+#             */
+/*   Updated: 2026/03/11 14:15:24 by ccorbeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	rush(int x, int y);
-
-int	main(void)
+int	ft_recursive_power(int nb, int power)
 {
-	rush(5, 3);
-	ft_putchar('\n');
-	rush(5, 1);
-	ft_putchar('\n');
-	rush(1, 1);
-	ft_putchar('\n');
-	rush(1, 5);
-	ft_putchar('\n');
-	rush(4, 4);
+	if (power < 0)
+		return (0);
+	if (power == 0)
+		return (1);
+	while (nb != 0)
+		return (nb * ft_recursive_power(nb, power - 1));
 	return (0);
 }

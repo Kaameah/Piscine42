@@ -1,29 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ccorbeau <ccorbeau@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/07 17:37:39 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/07 17:37:41 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/11 14:14:19 by ccorbeau          #+#    #+#             */
+/*   Updated: 2026/03/11 14:14:28 by ccorbeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-void	ft_putchar(char c);
-
-void	rush(int x, int y);
-
-int	main(void)
+int	ft_recursive_factorial(int nb)
 {
-	rush(5, 3);
-	ft_putchar('\n');
-	rush(5, 1);
-	ft_putchar('\n');
-	rush(1, 1);
-	ft_putchar('\n');
-	rush(1, 5);
-	ft_putchar('\n');
-	rush(4, 4);
-	return (0);
+	if (nb < 0)
+		return (0);
+	if (nb == 0 || nb == 1)
+		return (1);
+	return (nb * ft_recursive_factorial(nb - 1));
 }

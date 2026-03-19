@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ccorbeau <ccorbeau@student.42belgium.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/05 18:43:32 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/05 20:15:12 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/10 02:25:15 by ccorbeau          #+#    #+#             */
+/*   Updated: 2026/03/10 02:25:36 by ccorbeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,28 +24,7 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-void	ft_putnbr(int nb)
+void	ft_putstr(char *str)
 {
-	if (nb > 9)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-	}
-	else
-	{
-		nb += '0';
-		write(1, &nb, 1);
-	}
+	write(1, str, ft_strlen(str));
 }
-/*
-int main(void)
-{
-    char    *message;
-	int	lenght;
-
-    message  = "Hello";
-    lenght = ft_strlen(message);
-	ft_putnbr(lenght);
-	
-}
-*/

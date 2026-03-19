@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ccorbeau <ccorbeau@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/07 17:37:39 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/07 17:37:41 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/11 14:16:36 by ccorbeau          #+#    #+#             */
+/*   Updated: 2026/03/11 14:16:46 by ccorbeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-void	ft_putchar(char c);
-
-void	rush(int x, int y);
-
-int	main(void)
+int	ft_is_prime(int n)
 {
-	rush(5, 3);
-	ft_putchar('\n');
-	rush(5, 1);
-	ft_putchar('\n');
-	rush(1, 1);
-	ft_putchar('\n');
-	rush(1, 5);
-	ft_putchar('\n');
-	rush(4, 4);
-	return (0);
+	int	i;
+
+	i = 2;
+	if (n <= 1)
+		return (0);
+	while (i < n)
+	{
+		if (n % i == 0)
+			return (0);
+		i++;
+	}
+	return (1);
 }

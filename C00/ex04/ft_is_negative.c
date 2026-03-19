@@ -1,51 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccorbeau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/05 18:43:32 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/05 20:15:12 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/04 16:29:49 by ccorbeau          #+#    #+#             */
+/*   Updated: 2026/03/05 16:02:42 by ccorbeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_strlen(char *str)
+void	ft_is_negative(int n)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
+	if (n < 0)
 	{
-		i++;
-	}
-	return (i);
-}
-
-void	ft_putnbr(int nb)
-{
-	if (nb > 9)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		write (1, "N", 1);
 	}
 	else
 	{
-		nb += '0';
-		write(1, &nb, 1);
+		write(1, "P", 1);
 	}
 }
-/*
+
+/* 
 int main(void)
 {
-    char    *message;
-	int	lenght;
-
-    message  = "Hello";
-    lenght = ft_strlen(message);
-	ft_putnbr(lenght);
-	
+	ft_is_negative(0);
+	ft_is_negative(-66);
+	ft_is_negative(10);
+	ft_is_negative(-5);
 }
 */

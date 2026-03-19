@@ -1,16 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ccorbeau <ccorbeau@student.42belgium.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/05 18:43:32 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/05 20:15:12 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/09 20:37:50 by ccorbeau          #+#    #+#             */
+/*   Updated: 2026/03/09 20:37:53 by ccorbeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
@@ -24,28 +22,18 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-void	ft_putnbr(int nb)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	if (nb > 9)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-	}
-	else
-	{
-		nb += '0';
-		write(1, &nb, 1);
-	}
-}
-/*
-int main(void)
-{
-    char    *message;
-	int	lenght;
+	unsigned int	i;
+	unsigned int	lend;
 
-    message  = "Hello";
-    lenght = ft_strlen(message);
-	ft_putnbr(lenght);
-	
+	lend = ft_strlen(dest);
+	i = 0;
+	while (src[i] && i < nb)
+	{
+		dest[lend + i] = src[i];
+		i++;
+	}
+	dest[lend + i] = '\0';
+	return (dest);
 }
-*/

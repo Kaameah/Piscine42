@@ -25,13 +25,13 @@ void	rush(int x, int y)
 		{
 			if ((ligne == 0 && colonne == 0)
 				|| ((ligne == y - 1 && colonne == x - 1) && x != 1 && y != 1))
-				ft_putchar('/');
+				ft_putchar('A');
 			else if ((ligne == 0 && colonne == x - 1)
 				|| (ligne == y - 1 && colonne == 0))
-				ft_putchar('\\');
+				ft_putchar('C');
 			else if ((ligne == 0 || ligne == y - 1)
 				|| (colonne == 0 || colonne == x - 1))
-				ft_putchar('*');
+				ft_putchar('B');
 			else
 				ft_putchar(' ');
 		}

@@ -65,7 +65,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	result[k] = '\0';
 	return (result);
 }
-
+/*
 #include <stdio.h>
 int	main(void)
 {
@@ -74,4 +74,4 @@ int	main(void)
 	int	size =  3;
 	printf("%s", ft_strjoin(size, strs, " - "));
 }
-
+*/

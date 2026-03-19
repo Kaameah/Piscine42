@@ -24,14 +24,14 @@ void	rush(int x, int y)
 		while (colonne++ < x - 1)
 		{
 			if ((ligne == 0 && colonne == 0)
-				|| ((ligne == y - 1 && colonne == x - 1) && x != 1 && y != 1))
-				ft_putchar('/');
-			else if ((ligne == 0 && colonne == x - 1)
 				|| (ligne == y - 1 && colonne == 0))
-				ft_putchar('\\');
+				ft_putchar('A');
+			else if ((ligne == y - 1 && colonne == x - 1)
+				|| (ligne == 0 && colonne == x - 1))
+				ft_putchar('C');
 			else if ((ligne == 0 || ligne == y - 1)
 				|| (colonne == 0 || colonne == x - 1))
-				ft_putchar('*');
+				ft_putchar('B');
 			else
 				ft_putchar(' ');
 		}

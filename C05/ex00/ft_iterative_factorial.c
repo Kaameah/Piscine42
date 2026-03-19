@@ -1,29 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ccorbeau <ccorbeau@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/07 17:37:39 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/07 17:37:41 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/11 14:13:30 by ccorbeau          #+#    #+#             */
+/*   Updated: 2026/03/11 14:13:57 by ccorbeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+//#include <stdio.h>
+int	ft_iterative_factorial(int nb)
+{
+	int	i;
+	int	result;
 
-void	rush(int x, int y);
-
+	i = 1;
+	result = 1;
+	if (nb < 0)
+		return (0);
+	while (i <= nb)
+	{
+		result = result * i;
+		i++;
+	}
+	return (result);
+}
+/*
 int	main(void)
 {
-	rush(5, 3);
-	ft_putchar('\n');
-	rush(5, 1);
-	ft_putchar('\n');
-	rush(1, 1);
-	ft_putchar('\n');
-	rush(1, 5);
-	ft_putchar('\n');
-	rush(4, 4);
-	return (0);
+	ft_iterative_factorial(0);
 }
+*/

@@ -9,9 +9,6 @@
 /*   Updated: 2026/03/05 20:16:08 by ccorbeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-
 void	ft_rev_int_tab(int *tab, int size)
 {
 	int	tmp;
@@ -26,7 +23,8 @@ void	ft_rev_int_tab(int *tab, int size)
 		i ++;
 	}
 }
-
+/*
+#include <stdio.h>
 int	main(void)
 {
 	int	tab[8] = {3,0,0,2,9,0,4,2};
@@ -34,12 +32,13 @@ int	main(void)
 	ft_rev_int_tab(tab, 8);
 	
 	printf("%c", tab);
-	/*
+
 	int	i = 0;
 	while (i < 8)
 	{
 		printf("%d", tab[i]);
 		i++;
 	}
-	*/
+
 }
+*/

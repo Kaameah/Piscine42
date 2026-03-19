@@ -1,51 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccorbeau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/05 18:43:32 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/05 20:15:12 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/08 00:28:03 by ccorbeau          #+#    #+#             */
+/*   Updated: 2026/03/08 00:28:06 by ccorbeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int	ft_strlen(char *str)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	if (size == 0)
 	{
+		while (src[i])
+			i++;
+		return (i);
+	}
+	while (src[i] && i < size - 1)
+	{
+		dest[i] = src[i];
 		i++;
 	}
+	dest[i] = '\0';
+	while (src[i])
+		i++;
 	return (i);
 }
-
-void	ft_putnbr(int nb)
-{
-	if (nb > 9)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-	}
-	else
-	{
-		nb += '0';
-		write(1, &nb, 1);
-	}
-}
-/*
-int main(void)
-{
-    char    *message;
-	int	lenght;
-
-    message  = "Hello";
-    lenght = ft_strlen(message);
-	ft_putnbr(lenght);
-	
-}
-*/
