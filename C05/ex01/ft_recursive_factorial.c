@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <ccorbeau@student.s19.be>         +#+  +:+       +#+        */
+/*   By: username <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/11 14:14:19 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/11 14:14:28 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/11 14:14:19 by username          #+#    #+#             */
+/*   Updated: 2026/03/11 14:14:28 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_recursive_factorial(int nb)

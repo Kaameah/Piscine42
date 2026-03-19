@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <ccorbeau@student.42belgium.      +#+  +:+       +#+        */
+/*   By: username <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/10 02:25:54 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/10 02:26:13 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/10 02:25:54 by username          #+#    #+#             */
+/*   Updated: 2026/03/10 02:26:13 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   apply_rules.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <ccorbeau@student.s19.be>         +#+  +:+       +#+        */
+/*   By: username <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/15 15:58:58 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/15 15:59:11 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/15 15:58:58 by username          #+#    #+#             */
+/*   Updated: 2026/03/15 15:59:11 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 extern void	fill_rules(int **rules);

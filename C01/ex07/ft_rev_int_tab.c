@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: username <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/05 18:58:02 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/05 20:16:08 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/05 18:58:02 by username          #+#    #+#             */
+/*   Updated: 2026/03/05 20:16:08 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 void	ft_rev_int_tab(int *tab, int size)

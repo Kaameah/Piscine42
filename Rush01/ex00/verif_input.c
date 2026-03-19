@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   verif_input.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <ccorbeau@student.s19.be>         +#+  +:+       +#+        */
+/*   By: username <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/14 19:34:26 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/14 19:34:28 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/14 19:34:26 by username          #+#    #+#             */
+/*   Updated: 2026/03/14 19:34:28 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 void	parse_input(char *str, int clues[16])

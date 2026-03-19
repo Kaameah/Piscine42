@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <ccorbeau@student.42belgium.      +#+  +:+       +#+        */
+/*   By: username <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/09 22:28:38 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/09 22:28:40 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/09 22:28:38 by username          #+#    #+#             */
+/*   Updated: 2026/03/09 22:28:40 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>   

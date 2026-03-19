@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <ccorbeau@student.42belgium.      +#+  +:+       +#+        */
+/*   By: username <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/10 02:26:29 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/10 02:26:49 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/10 02:26:29 by username          #+#    #+#             */
+/*   Updated: 2026/03/10 02:26:49 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_atoi(char *str)

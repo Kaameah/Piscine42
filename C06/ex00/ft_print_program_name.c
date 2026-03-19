@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccorbeau <ccorbeau@student.s19.be>         +#+  +:+       +#+        */
+/*   By: username <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/12 14:05:24 by ccorbeau          #+#    #+#             */
-/*   Updated: 2026/03/12 14:05:26 by ccorbeau         ###   ########.fr       */
+/*   Created: 2026/03/12 14:05:24 by username          #+#    #+#             */
+/*   Updated: 2026/03/12 14:05:26 by username         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
