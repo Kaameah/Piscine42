@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_show_tab.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: username <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ccorbeau <ccorbeau@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/05 12:03:51 by username          #+#    #+#             */
-/*   Updated: 2026/03/05 16:21:18 by username         ###   ########.fr       */
+/*   Created: 2026/03/19 18:00:53 by ccorbeau          #+#    #+#             */
+/*   Updated: 2026/03/19 18:00:56 by ccorbeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+#include "ft_stock_str.h"
 
 int	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 		i++;
 	return (i);
 }
@@ -32,30 +27,35 @@ void	ft_putstr(char *str)
 	write(1, str, ft_strlen(str));
 }
 
-void	ft_putnbr(int n)
+void	ft_putnbr(int nb)
 {
-	if (n == -2147483648)
-		ft_putstr("-2147483648");
-	else if (n < 0)
+	if (nb < 0)
 	{
-		ft_putchar('-');
-		ft_putnbr(-n);
+		write(1, "-", 1);
+		nb = -nb;
 	}
-	else if (n >= 10)
+	if (nb > 9)
 	{
-		ft_putnbr(n / 10);
-		ft_putchar(n % 10 + '0');
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
 	}
 	else
-		ft_putchar(n + '0');
+	{
+		nb += '0';
+		write(1, &nb, 1);
+	}
 }
 
-/*
-int main(void)
+void	ft_show_tab( struct s_stock_str *par)
 {
-    ft_putnbr(-54242);
-    ft_putnbr(253312);
-    ft_putnbr(0);
-    ft_putnbr(-42);
+	while (par->str)
+	{
+		ft_putstr(par->str);
+		ft_putstr("\n");
+		ft_putnbr(par->size);
+		ft_putstr("\n");
+		ft_putstr(par->copy);
+		ft_putstr("\n");
+		par++;
+	}
 }
-*/

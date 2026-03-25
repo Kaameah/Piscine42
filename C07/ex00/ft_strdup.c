@@ -16,39 +16,37 @@ int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 	{
 		i++;
 	}
 	return (i);
 }
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *copy, char *src)
 {
 	int	i;
 
 	i = 0;
 	while (src[i])
 	{
-		dest[i] = src[i];
+		copy[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	copy[i] = '\0';
+	return (copy);
 }
 
 char	*ft_strdup(char *src)
 {
-	int		l;
 	char	*copy;
 
-	l = ft_strlen(src) + 1;
-	copy = (char *) malloc(l * sizeof(char));
+	copy = malloc((ft_strlen(src) + 1));
 	ft_strcpy(copy, src);
 	return (copy);
 }
 
-/*
+
 #include <stdio.h>
 
 int main() {
@@ -58,4 +56,4 @@ int main() {
     printf( "La copie contient : %s\n", ft_strdup(original));
     return 0;
 }
-*/
+
