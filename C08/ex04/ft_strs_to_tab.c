@@ -52,17 +52,17 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 	int			i;
 	t_stock_str	*result;
 
-	if (ac < 2)
-		return (NULL);
 	result = malloc(sizeof(t_stock_str) * (ac + 1));
 	if (!result)
 		return (NULL);
-	i = 1;
+	i = 0;
 	while (i < ac)
 	{
 		result[i].size = ft_strlen(av[i]);
 		result[i].str = av[i];
 		result[i].copy = ft_strdup(av[i]);
+		if (!result[i].copy)
+			return (NULL);
 		i++;
 	}
 	result[i].size = 0;
